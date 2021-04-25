@@ -84,8 +84,8 @@ if sys.platform == "darwin":
             'default': {
                 'ENGINE': 'django.db.backends.postgresql',
                 'NAME': 'New Fixtures Database',
-                'USER': 'Fixtures_new',
-                'PASSWORD': 'HawkEye007',
+                'USER': '-',
+                'PASSWORD': '-',
                 'HOST': 'localhost',
                 'PORT': '5432'
             }
