@@ -24,7 +24,7 @@ PROJECT_DIR = os.path.join(BASE_DIR, "football_website")
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+a13(oz5d!%vtwsu^ug%8+capbxtdvw223jvv$n+97-^fb-#-d'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,8 +84,8 @@ if sys.platform == "darwin":
             'default': {
                 'ENGINE': 'django.db.backends.postgresql',
                 'NAME': 'New Fixtures Database',
-                'USER': 'Fixtures_new',
-                'PASSWORD': 'HawkEye007',
+                'USER': '-',
+                'PASSWORD': '-',
                 'HOST': 'localhost',
                 'PORT': '5432'
             }
