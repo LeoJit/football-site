@@ -1,0 +1,407 @@
+{% extends 'base.html' %}
+
+{% block title %}LaLiga{% endblock %}
+{% load static %}
+{% block content %}
+
+<div style= "background-image: repeating-linear-gradient(blue, green) repeat">
+<p>
+<br>
+<br><br>
+<h1 style="text-align: center;"><u>Primera División</u></h1>
+    <img src= "{% static 'assets/img/Laliga/LaLiga.png' %}" style= "float:right;width:200px;height:210px;">
+</h1>
+
+<div style= "text-align: left;">
+    <ul>
+        <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#About">About this competition</a></li>
+        <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Format">Format of this competition</a></li>
+        <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Teams">Teams in this competition</a></li>
+        <ul>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ATM">Athlético Madrid CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#RMA">Real Madrid CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Barça">FC Barcelona</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Sevilla">Sevilla FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#RSC">Real Sociedad FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Betis">Real Betis FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Villareal">Villareal CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Levante">Levante UD</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Granada">Granada CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Celta">RC Celta de Vigo</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Bilbao">Athletic Bilbao FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Valencia">Valencia CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Osasuna">CA Osasuna</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Cadiz">Cádiz CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Getafe">Getafe CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Alaves">Deportivo Alavés</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Eibar">SD Eibar</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Elche">Elche CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Valladolid">Real Valladolid CF</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Huesca">SD Huesca</a></li>
+            
+
+        </ul>
+    </ul>
+</div>
+
+<div class= "container" id= "About" style="text-align: left;">
+    <h4>
+        <u><b>About the League</b></u>
+    </h4>
+    <p>
+        The Campeonato Nacional de Liga de Primera División, commonly known as La Liga (LaLiga Santander for sponsorship reasons with Santander), stylized as LaLiga, is the men's top professional football division of the Spanish football league system. Administered by the Liga Nacional de Fútbol Profesional, is contested by 20 teams, with the three lowest-placed teams at the end of each season relegated to the Segunda División and replaced by the top two teams and a play-off winner in that division.
+
+    A total of 62 teams have competed in La Liga since its inception. Nine teams have been crowned champions, with Real Madrid winning the title a record 34 times and FC Barcelona 26 times. During the 1940s Valencia, Atlético Madrid and Barcelona emerged as the strongest clubs, winning several titles. Real Madrid and Barcelona dominated the championship in the 1950s, each winning four La Liga titles during the decade. During the 1960s and 1970s Real Madrid dominated La Liga, winning 14 titles, with Atlético Madrid winning four. During the 1980s and 1990s Real Madrid were prominent in La Liga, but the Basque clubs of Athletic Club and Real Sociedad had their share of success, each winning two Liga titles. From the 1990s onward, Barcelona have dominated La Liga winning 16 titles up to date. Although Real Madrid has been prominent, winning nine titles, La Liga has also seen other champions, including Atlético Madrid, Valencia, and Deportivo La Coruña.
+    </p>
+</div>
+
+<div class= "container" id= "Format" style="text-align: left;">
+    <h4>
+        <u><b>Format</b></u>
+    </h4>
+
+    <p>
+        The competition format follows the usual double round-robin format. During the course of a season, which lasts from August to May, each club plays every other club twice, once at home and once away, for 38 matches. Teams receive three points for a win, one point for a draw, and no points for a loss. Teams are ranked by total points, with the highest-ranked club at the end of the season crowned champion.
+    </p>
+</div>
+
+<div class= "container" id= "Teams" style="text-align: left;">
+    <h4>
+        <b><u>Teams in this competition</u></b>
+    </h4>
+
+    <div class="container" id= "ATM">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid" src="{% static 'assets/img/LaLiga/ATM.png' %}" style= "width:160px;height:200px;"alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h5>Club Athlético de Madrid</h5>
+            <p>Club Atlético de Madrid, meaning "Athletic Club of Madrid", commonly referred to as Atlético de Madrid in English or simply as Atlético, Atléti, or Atleti, is a Spanish professional football club based in Madrid, that play in La Liga. The club play their home games at the Wanda Metropolitano Stadium, which has a capacity of 68,456. In terms of league titles won, Atlético Madrid are the third most successful club in Spanish football – behind Real Madrid and Barcelona. Atlético have won La Liga on 10 occasions, including a league and cup double in 1996</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "RMA">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/RMA.png' %}" style= "align-items:right;width:160px;height:200px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Real Madrid CF</h5>
+              <p>Real Madrid Club de Fútbol, meaning Royal Madrid Football Club, commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid. Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn a white home kit since inception. The word real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European sporting entities, Real Madrid's members (socios) have owned and operated the club throughout its history.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Barça">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Barca.png' %}" style= "width:200px;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>FC Barcelona</h5>
+              <p>Futbol Club Barcelona, commonly referred to as Barcelona and colloquially known as Barça, is a Spanish professional football club based in Barcelona, that competes in La Liga, the top flight of Spanish football. Founded in 1899 by a group of Swiss, Spanish, English, and Catalan footballers led by Joan Gamper, the club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" ("More than a club"). Unlike many other football clubs, the supporters own and operate Barcelona. It is the fourth-most valuable sports team in the world, worth $4.06 billion, and the world's richest football club in terms of revenue, with an annual turnover of €840,8 million. The official Barcelona anthem is the "Cant del Barça", written by Jaume Picas and Josep Maria Espinàs. Barcelona traditionally play in dark shades of blue and red stripes, leading to the nickname Blaugrana.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Sevilla">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Sevilla.png' %}" style= "width:180px;height:200px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Sevilla FC</h5>
+              <p>Sevilla Fútbol Club, is a Spanish professional football club based in Seville, the capital and largest city of the autonomous community of Andalusia, Spain. It plays in Spanish football's top flight, La Liga. Sevilla is one of the most successful clubs at the European level, winning the UEFA Europa League six times, more than any other European club. It is Spain's oldest sporting club solely devoted to football. The club was formed on 25 January 1890, with the Scottish born Edward Farquharson Johnston as their first president. On 14 October 1905, the club's articles of association were registered in the Civil Government of Seville under the presidency of the Jerez-born José Luis Gallegos Arnosa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "RSC">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/RSC.png' %}" style= "width:170px;height:180px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Real Sociedad FC</h5>
+              <p>Real Sociedad de Fútbol, S.A.D., more commonly referred to as Real Sociedad, meaning Royal Society or La Real, is a Spanish professional sports club in the city of San Sebastián, Basque Country, founded on 7 September 1909. It plays its home matches at the Anoeta Stadium. Real Sociedad won the Liga title in 1980–81 and 1981–82, and last finished runner-up in 2002–03. The club has also won the Copa del Rey twice, in 1909 and 1987. It contests the Basque derby against rivals Athletic Bilbao. Real Sociedad was a founder member of La Liga in 1929; its longest spell in the top flight was for 40 seasons, from 1967 to 2007.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Betis">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Betis.png' %}" style= "width:240px;height:180px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Real Betis FC</h5>
+              <p>Real Betis Balompié, S.A.D., commonly referred to as Real Betis or Betis, is a Spanish professional football club based in Seville in the autonomous community of Andalusia. Founded on 12 September 1907, it plays in La Liga, having won the Segunda División in the 2014–15 season. It holds home games at Estadio Benito Villamarín in the south of the city with 60,720-seat capacity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Villareal">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Villareal.png' %}" style= "width:180px;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Villareal CF</h5>
+              <p>Villarreal Club de Fútbol, usually abbreviated to Villarreal CF or just Villarreal, is a Spanish professional football club based in Villarreal that plays in La Liga, the top flight of Spanish football. Founded in 1923, the club spent much of its history in the lower divisions of Spanish football, and only made their La Liga debut in 1998. In the 21st century, Villarreal gained some league stability, and the club made its first appearance in the UEFA Champions League in 2005. The club also appeared in the UEFA Europa League during this time, but sustained relegation in 2012, quickly rebounding and becoming a stable top division club.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Levante">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Levante.png' %}" style= "width:200px;height:240px;"alt="Levante Logo">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Levante UD</h5>
+              <p>Levante Unión Deportiva, is a Spanish football club in Valencia, in the namesake autonomous community. Founded on 9 September 1909, it plays in La Liga, holding home games at Ciutat de València Stadium. On 26 October 2011, during round nine of the season, Levante defeated Real Sociedad 3–2 to move top of the table with 23 points. It was the first time in the club's history it reached the highest ranking in the top division. In the process, it recorded seven-straight wins after drawing its first two games. The club eventually finished in sixth position after defeating Athletic Bilbao 3–0 at home in its last match, thus qualifying for the UEFA Europa League for the first time in its history. There, they made it to the last 16 before a 2–0 extra-time loss to Russia's FC Rubin Kazan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Granada">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Granada.png' %}" style= "width:120px;height:220px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Granada CF</h5>
+              <p>Granada Club de Fútbol, known simply as Granada, is a Spanish football club in the city of Granada, in the autonomous community of Andalusia. Its main shareholder is the Chinese company Desport, and its president Jiang Lizhang. The football club was founded on 14 April 1931 with the name of Club Recreativo de Granada, it plays in La Liga. The club plays its home matches at the Nuevo Estadio de Los Cármenes. Since 17 July 2020 the Club is located at position 22 of the historical points classification of the First Division, and 20 of the historical First Division number of seasons classification, where it has participated in 25 seasons and finished in sixth place twice.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Celta">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Celta.png' %}" style= "width:150px;height:240px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>RC Celta de Vigo</h5>
+              <p>Real Club Celta de Vigo, commonly known as Celta de Vigo or simply Celta, is a Spanish professional football club based in Vigo, Galicia, that competes in La Liga, the top tier of Spanish football. Nicknamed Os Celestes (The Sky Blues), the club was founded on 23 August 1923 following the merger of two Vigo-based teams. The club's home stadium is Balaídos, which seats 29,000 spectators. The club's name is derived from the Celts, a people who once lived in the region. Its main rival is fellow Galician club Deportivo La Coruña, with whom it contests the Galician derby.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Bilbao">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Bilbao.png' %}" style= "width:180px;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Athletic Bilbao FC</h5>
+              <p>Athletic Club, commonly known as Athletic Bilbao or just Athletic, is a professional football club based in the city of Bilbao in the Basque Country in Spain. They are known as Los Leones (The Lions) because their stadium was built near a church called San Mamés (Saint Mammes). Mammes was an early Christian thrown to the lions by the Romans. Mammes pacified the lions and was later made a saint. The team plays its home matches at the San Mamés Stadium. Its home colours are red and white-striped shirts with black shorts.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Valencia">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Valencia.png' %}" style= "width:170px;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Valencia CF</h5>
+              <p>Valencia Club de Fútbol, commonly referred to as Valencia CF or simply Valencia, is a Spanish professional football club in Valencia. They play in La Liga. Valencia have won six La Liga titles, eight Copa del Rey titles, one Supercopa de España and one Copa Eva Duarte. In European competitions, they have won two Inter-Cities Fairs Cups, one UEFA Cup, one UEFA Cup Winners' Cup, two UEFA Super Cups and one UEFA Intertoto Cup. They have also reached two UEFA Champions League finals in a row, losing to La Liga rivals Real Madrid in 2000 and German club Bayern Munich on penalties after a 1–1 draw in 2001. Valencia were also members of the G-14 group of leading European football clubs and since its end has been part of the original members of the European Club Association. In total, Valencia have reached seven major European finals, winning four of them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Osasuna">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Osasuna.png' %}" style= "width:190;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>CA Osasuna</h5>
+              <p>Club Atlético Osasuna, or simply Osasuna, is a Spanish football team in Pamplona, Navarre. Founded on 24 October 1920, the club currently plays in La Liga, holding home games at the 18,375-capacity El Sadar Stadium. The team's regular home kit is a red shirt with navy blue shorts. Osasuna is one of just four professional Spanish clubs to be owned by their members with an elected president. Osasuna is the sole Navarrese club to have played in La Liga. Although the club has never won a national trophy it reached the Copa del Rey final in 2005. The best league finishes were fourth in La Liga in 1991 and 2006.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Cadiz">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Cadiz.png' %}" style= "width:180px;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Cádiz CF</h5>
+              <p>Cádiz Club de Fútbol, known simply as Cádiz, is a Spanish professional football club based in Cádiz, Andalusia. Founded in 1910, it competes in the La Liga, holding home games at Estadio Ramón de Carranza, with a seating capacity of 20,724. Salvadoran legend Mágico González played for the club during the 1980s/1990s, and is widely recognized as the greatest player to have ever played for the team. Between 1929 and 1977, Cádiz either played in the second or third tier of Spanish football. In 1977, promotion to La Liga was achieved for the first time in the club’s history. Since then Cádiz has played twelve seasons in total in the first tier, as well as spending several in the second level.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Getafe">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Getafe.png' %}" style= "width:180;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Getafe CF</h5>
+              <p>Getafe Club de Fútbol, or simply Getafe, is a Spanish football club based in Getafe, a city in the south of the Community of Madrid. The team competes in La Liga, the highest tier of the Spanish football system. The club's home stadium is Coliseum Alfonso Pérez which was opened in 1998 and can hold 17,393 spectators. The club was founded in 1946 and refounded in 1983. Getafe participated in the top level of Spanish football for 12 years between 2004 and 2016, and again since 2017. The club's main rivalry is against neighbours Leganés, who are based near the town of Getafe, and a friendly rivalry against Atlético Madrid and Real Madrid.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Alaves">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Alaves.png' %}" style= "width:220;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Deportivo Alavés</h5>
+              <p>Deportivo Alavés, usually abbreviated to Alavés, is a Spanish football club based in Vitoria-Gasteiz, Álava, in the autonomous community of the Basque Country. Founded on 1 July 1920 as Sport Friends Club, it has played in the highest football category of The Liga Nacional de Fútbol Profesional, La Liga, since the 2016–17 season. It is recognized as the third most successful team in the Basque Country following Athletic Club of Bilbao and Real Sociedad de Futbol of San Sebastián. Its biggest success was in 2001 when, in the year of its debut in European competition, it reached the final of the 2001 UEFA Cup Final, where it played against Liverpool. It was defeated 5–4 by golden goal. In 2017, the club reached the final of the Copa del Rey, losing out 3–1 to Barcelona. The team's home kit is blue and white-striped shirt, blue shorts and white socks. It holds home matches at the 19,840-seater Mendizorrotza Stadium and uses other facilities located in Ibaia dedicated to training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Eibar">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/LaLiga/Eibar.png' %}" style= "width:180;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>SD Eibar</h5>
+              <p>Sociedad Deportiva Eibar is a Spanish football club based in Eibar, Gipuzkoa, in the autonomous Basque Country. Founded on 30 November 1940, the team currently plays in La Liga having been promoted to the top tier of Spanish football for the first time in 2014. They also participated in 26 Segunda División seasons (a spell in the 1950s, and most of the 1990s and 2000s), spending the rest of their history competing at lower levels. The team plays in claret and blue shirts with blue shorts (originating from the kit of FC Barcelona) and holds home games at the Ipurua Municipal Stadium. SD Eibar is a fan-owned club, with about 8,000 shareholders from 48 countries</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Elche">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Elche.png' %}" style= "width:220;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Elche CF</h5>
+              <p>Elche Club de Fútbol, is a Spanish football team based in Elx, Province of Alacant, in the Valencian Community. Founded in 1923, the club plays in La Liga, holding home matches at Estadio Manuel Martínez Valero, with a capacity of 33,732 seats. Founded in 1923 as the result of a merger between all of the town's clubs, Elche entered the league system in 1929, reaching Segunda División in 1934 and La Liga in 1959, finishing fifth in the latter tournament in 1963–64. It was runner-up in the Copa del Rey in 1969. It has been the first and only club in the history of La Liga to be relegated due to unpaid tax debts in the 2014–15 season. Elche returned to La Liga in 2020–21 after being promoted to La Liga Smartbank and La Liga in the last three seasons.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Valladolid">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Valladolid.png' %}" style= "width:180;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Real Valladolid CF</h5>
+              <p>Real Valladolid Club de Fútbol, or Valladolid, is a Spanish professional football club based in Valladolid (Castile and León) from where the nickname Pucela – also the nickname of the city – is derived. The club colours are violet and white, used on the kit in stripes from its foundation on 20 June 1928. The team plays in La Liga, holding home games at the Estadio José Zorrilla, which seats 27,846 spectators. Valladolid's honours include a single trophy of great relevance, the defunct Copa de la Liga 1983–84. It has been runner-up in the Copa del Rey on two occasions (1949–50 and 1988–89), and has participated in two editions of the UEFA Cup (1984–85 and 1997–98) and also one edition of the UEFA Cup Winners' Cup (1989–90). The team subsidiary, the Real Valladolid B, currently play in the Segunda División B.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Huesca">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/LaLiga/Huesca.png' %}" style= "width:220;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>SD Huesca</h5>
+              <p>Sociedad Deportiva Huesca, S.A.D., is a Spanish football club in Huesca, in the autonomous community of Aragon. Founded on 29 March 1960, SD Huesca plays in La Liga, having played in the Spanish top division for the first time in the club's history during the 2018–19 season. SD Huesca plays its home games at Estadio El Alcoraz, which seats 7,638 spectators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<a href= "leagues">Go back to Leagues Page</a>
+</p>
+</div>
+
+{% endblock %}

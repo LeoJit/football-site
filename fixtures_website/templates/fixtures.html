@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Fixtures{% endblock %}
+
+{% block content %}
+
+<div class="masthead">
+    <br><br><br>
+    {% for k, v in fixtures.items %}
+        <br>
+        <hr>
+        <center><h3>{{ k }}</h3></center>
+        {% for m in v %}
+            <center><ul>{{ m }}</ul></center>
+        {% endfor %}
+    {% endfor %}
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Leagues{% endblock %}
+
+{% block content %}
+
+<br><br>
+
+<!--
+<header class="masthead">
+    <div class="container d-flex align-items-center">
+        <div class="mx-auto text-center">
+            
+            <h2 class="text-white mb-4">There are quite a few leagues in the world today. These would mainly include the top 5 leagues in Europe:</h2>
+                <p class="text-white-50">
+                    <a href= "laliga">Primera Divisíon (Spain)<br></a>
+                    <a href= "epl">English Premier League (England)<br></a>
+                    <a href= "buli">Bundesliga (Germany)<br></a>
+                    <a href= "l1">Ligue 1 (France)<br></a>
+                    <a href= "seriea">Serie A (Italy)<br></a>
+                </p>
+        </div>
+    </div>
+</header>
+-->
+
+<section id="premierleague" class="premier-league">
+<div class="container">
+
+    <div class="text-right">
+        <div class = "container">
+        <h3>Premier League</h3>
+        <p>The English Premier League, formerly known as the Barclays Premier League is England's top flight <br> football competition. The best of the best clubs compete head to head
+            <br>to assert their dominance and win the Premier League trophy. <br>Click <a href= "epl">here</a> to read more about this league.
+        </p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section id="laliga" class="la-liga">
+    <div class="container">
+    
+        <div class="text-left">
+          <h3>LaLiga</h3>
+          <a href= "laliga">Primera Divisíon (Spain)<br></a>
+        </div>
+    
+    </div>
+</section>
+
+<section id="buli" class="bundesliga">
+    <div class="container">
+    
+        <div class="text-right">
+          <h3>Bundesliga</h3>
+          <a href= "buli">Bundesliga (Germany)<br></a>
+        </div>
+    
+    </div>
+</section>
+
+<section id="seriea" class="serie-a">
+    <div class="container">
+    
+        <div class="text-left">
+          <h3>Serie A</h3>
+          <a href= "seriea">Serie A (Italy)<br></a>
+        </div>
+    
+    </div>
+</section>
+
+<section id="ligue1" class="ligue-1">
+    <div class="container">
+    
+        <div class="text-right">
+          <h3>Ligue 1</h3>
+          <a href= "l1">Ligue 1 (France)<br></a>
+        </div>
+    
+    </div>
+</section>
+
+
+{% endblock %}

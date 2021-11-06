@@ -1,0 +1,434 @@
+{% extends 'base.html' %}
+
+{% block title %}Premier League{% endblock %}
+{% load static %}
+{% block content %}
+
+
+<div style= "background-image: url('/Users/nirajit/Desktop/Dev Codes/django-websites/static/assets/img/Logo.jpg');">
+<p>
+<h1>
+    <br><br><br>
+    <div class = "container">
+      <div class = "text-center">
+        <img src= "{% static 'assets/img/EPL/Premier League.png' %}">
+        <b><u>English Premier League</u></b>
+      </div>
+    </div>
+</h1>
+
+
+<div class= "page-section" id= "Contents">
+    <ul>
+        <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#About">About this competition</a></li>
+        <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Format">Format of this competition</a></li>
+        <ul>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Competition">Main Competition</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#P&R">Promotion and Relegation</a></li>
+        </ul>
+        <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Teams">Teams in this competition</a></li>
+        <ul>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ManC">Manchester City FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ManU">Manchester United FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Leicester">Leicester City FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Chelsea">Chelsea FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#WHU">West Ham United FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#LFC">Liverpool FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Everton">Everton FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#AVFC">Aston Villa FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Spurs">Tottenham Hotspurs FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Arsenal">Arsenal FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#LUFC">Leeds United FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Wolves">Wolverhampton Wanderers FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Soton">Southampton FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Palace">Crystal Palace FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Burnley">Burnley FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Brighton">Brighton & Hove Albion FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Newcastle">Newcastle United FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Fulham">Fulham FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#WBA">West Bromwich Albion FC</a></li>
+            <li><a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Shef">Sheffield United FC</a></li>
+            
+
+        </ul>
+    </ul>
+</div>
+
+<div class= "page-section" id= "About">
+    <h4>
+        <u><b>About the League</b></u>
+    </h4>
+    <p>
+        The Premier League, often referred to outside the UK as the English Premier League, or sometimes the EPL, is the top level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons run from August to May with each team playing 38 matches (playing all 19 other teams both home and away). Most games are played on Saturday and Sunday afternoons.
+
+The competition was founded as the FA Premier League on 20 February 1992 following the decision of clubs in the Football League First Division to break away from the Football League, founded in 1888, and take advantage of a lucrative television rights deal. The deal was worth around £1 billion a year domestically as of 2013–14, with Sky and BT Group securing the domestic rights to broadcast 116 and 38 games respectively. The league is a corporation in which the member clubs act as shareholders, and generates €2.2 billion per year in domestic and international television rights. Clubs were apportioned central payment revenues of £2.4 billion in 2016–17, with a further £343 million in solidarity payments to English Football League (EFL) clubs.
+    </p>
+</div>
+
+<div class= "page-section" id= "Format">
+    <h4>
+        <u><b>Format</b></u>
+    </h4>
+    <br>
+    <div class= "page-section" id= "Competition">
+    <h5><u>Competition</u></h5>
+    There are 20 clubs in the Premier League. During the course of a season (from August to May) each club plays the others twice (a double round-robin system), once at their home stadium and once at that of their opponents', for 38 games. Teams receive three points for a win and one point for a draw. No points are awarded for a loss. Teams are ranked by total points, then goal difference, and then goals scored. If still equal, teams are deemed to occupy the same position. If there is a tie for the championship, for relegation, or for qualification to other competitions, a play-off match at a neutral venue decides rank.
+    </div>
+    <div class= "page-section" id= "P&R">
+    <h5><u>Promotion and relegation</u></h5>
+    A system of promotion and relegation exists between the Premier League and the EFL Championship. The three lowest placed teams in the Premier League are relegated to the Championship, and the top two teams from the Championship promoted to the Premier League, with an additional team promoted after a series of play-offs involving the third, fourth, fifth and sixth placed clubs. The number of clubs was reduced from 22 to 20 in 1995, when four teams were relegated from the league and only two teams promoted. The top flight had only been expanded to 22 teams at the start of the 1991–92 season – the year prior to the formation of the Premier League.
+    
+    On 8 June 2006, FIFA requested that all major European leagues, including Italy's Serie A and Spain's La Liga, be reduced to 18 teams by the start of the 2007–08 season. The Premier League responded by announcing their intention to resist such a reduction. Ultimately, the 2007–08 season kicked off again with 20 teams.
+    </div>
+
+</div>
+
+<div class= "page-section" id= "Teams">
+    <h4>
+        <b><u>Teams in this competition</u></b>
+    </h4>
+
+    
+    <div class="container" id= "ManC">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/ManC.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h5>Manchester City</h5>
+            <p>Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the City of Manchester Stadium in east Manchester, to which it moved in 2003, having played at Maine Road since 1923. The club adopted their sky blue home shirts in 1894 in the first season of the club's current iteration, that have been used ever since.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "ManU">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/ManU.png' %}" style= "width:200px;height:200px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Manchester United</h5>
+              <p>Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Leicester">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/LeicesterC.png' %}" style= "width:170px;height:170px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Leicester City FC</h5>
+              <p>Leicester City Football Club is a professional football club based in Leicester in the East Midlands, England. The club competes in the Premier League, the top division of England's football league system, and plays its home matches at the King Power Stadium. The club was founded in 1884 as Leicester Fosse F.C., playing on a field near Fosse Road. They moved to Filbert Street in 1891, were elected to the Football League in 1894 and adopted the name Leicester City in 1919. They moved to the nearby Walkers Stadium in 2002, which was renamed the King Power Stadium in 2011.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Chelsea">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/Chelsea.png' %}" style= "width:200px;height:200px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Chelsea FC</h5>
+              <p>Chelsea Football Club is an English professional football club based in Fulham, London. Founded in 1905, the club competes in the Premier League, the top division of English football. Chelsea are among England's most successful clubs, having won over thirty competitive honours, including six league titles and six European trophies. Their home ground is Stamford Bridge. Chelsea won their first major honour, the League championship, in 1955. The club won the FA Cup for the first time in 1970 and their first European honour, the Cup Winners' Cup, in 1971. After a period of decline in the late 1970s and 1980s, the club enjoyed a revival in the 1990s and had more success in cup competitions. The past two decades have been the most successful in Chelsea's history: they won five Premier League titles and both the UEFA Champions League and UEFA Europa League during this period</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "WHU">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/WHU.png' %}" style= "width:170px;height:180px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>West Ham United FC</h5>
+              <p>West Ham United Football Club is an English professional football club based in Stratford, East London. They compete in the Premier League, the top tier of English football. The club plays at the London Stadium, having moved from their former home the Boleyn Ground in 2016. The club was founded in 1895 as Thames Ironworks and reformed in 1900 as West Ham United. They moved to the Boleyn Ground in 1904, which remained their home ground for more than a century. The team initially competed in the Southern League and Western League before joining the Football League in 1919. They were promoted to the top flight in 1923, when they were also losing finalists in the first FA Cup Final held at Wembley. In 1940, the club won the inaugural Football League War Cup.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "LFC">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/Liverpool.png' %}" style= "width:180px;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Liverpool FC</h5>
+              <p>Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. Domestically, the club has won nineteen League titles, seven FA Cups, a record eight League Cups and fifteen FA Community Shields. In international competitions, the club has won six European Cups, more than any other English club, three UEFA Cups, four UEFA Super Cups (also English records) and one FIFA Club World Cup.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Everton">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/Everton.png' %}" style= "width:170px;height:180px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Everton FC</h5>
+              <p>Everton Football Club is an English professional football club based in Liverpool that competes in the Premier League, the top tier of English football. The club has competed in the top division for a record 117 seasons, missing only four top-flight seasons (1930–31, 1951–52, 1952–53, 1953–54) since the creation of the Football League, of which it was a founding member. Everton are the second-longest continuous serving club in English top flight football and has won nine league titles, five FA Cups, one European Cup Winners' Cup and nine Charity Shields.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "AVFC">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/AVFC.png' %}" style= "width:150px;height:180px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Aston Villa FC</h5>
+              <p>Aston Villa Football Club is an English professional football club based in Aston, Birmingham. The club competes in the Premier League, the top tier of the English football league system. Founded in 1874, they have played at their home ground, Villa Park, since 1897. Aston Villa were one of the founder members of the Football League in 1888 and of the Premier League in 1992. Villa are one of only five English clubs to have won the European Cup, in 1981–82. They have also won the Football League First Division seven times, the FA Cup seven times, the League Cup five times, and the European (UEFA) Super Cup once.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Spurs">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/Spurs.png' %}" style= "width:130px;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Tottenham Hotspurs FC</h5>
+              <p>Tottenham Hotspur Football Club, commonly referred to as Tottenham or Spurs, is an English professional football club in Tottenham, London, that competes in the Premier League. Tottenham Hotspur Stadium has been the club's home ground since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site. Their training ground is on Hotspur Way in Bulls Cross in the London Borough of Enfield. The club is owned by ENIC Group. Tottenham have played in a first (home) strip of white shirts and navy blue shorts since the 1898–99 season. The club's emblem is a cockerel standing upon a football, with a Latin motto Audere est Facere ("To Dare Is to Do").</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Arsenal">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/Arsenal.png' %}" style= "width:180px;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Arsenal FC</h5>
+              <p>The Arsenal Football Club is a professional football club based in Islington, London, England that plays in the Premier League, the top flight of English football. The club has won 13 league titles (including one unbeaten title), a record 14 FA Cups, two League Cups, 16 FA Community Shields, the League Centenary Trophy, one European Cup Winners' Cup, and one Inter-Cities Fairs Cup. Arsenal was the first club from the South of England to join The Football League, in 1893, and they reached the First Division in 1904. Relegated only once, in 1913, they continue the longest streak in the top division</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "LUFC">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/LUFC.png' %}" style= "width:150px;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Leeds United FC</h5>
+              <p>Leeds United Football Club is an English professional football club based in the city of Leeds, West Yorkshire. The club was formed in 1919 following the disbanding of Leeds City by the Football League and took over their Elland Road stadium. The club currently competes in the Premier League, the top flight of English football, following promotion from the EFL Championship during the 2019—20 season. Most of their history has been spent competing in the first tier of English football. Their longest continuous spell inside the first tier was a period of 18 years between 1964 and 1982, while their longest period outside of it spanned 16 years between 2004 and 2020.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Wolves">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/wolves.png' %}" style= "width:220px;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Wolverhampton Wanderers FC</h5>
+              <p>Wolverhampton Wanderers Football Club, commonly known as Wolves, is a professional association football club based in the city of Wolverhampton in the West Midlands, England. Formed as St. Luke's F.C. in 1877, the club has played at Molineux Stadium since 1889 and has been competing in the Premier League, the top division of English football, since winning promotion in 2018. The 2020–21 season is the club's 66th season in total at the highest level.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Soton">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/soton.png' %}" style= "width:190;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Southampton FC</h5>
+              <p>Southampton Football Club is an English professional football club based in Southampton, Hampshire, which plays in the Premier League, the top tier of English football. One of the founding members of the Premier League, they have spent the majority of their history in the top flight since their first promotion to it in 1966; their longest continuous period was for 27 seasons between 1978 and 2005.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Palace">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/palace.png' %}" style= "width:180px;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Crystal Palace FC</h5>
+              <p>Crystal Palace Football Club is a professional football club based in Selhurst, South London, England, who currently compete in the Premier League, the highest level of English football. Although their official founding date is 1905, the club claim to be a continuation of the original amateur Crystal Palace football club first established in 1861, which would make them the oldest professional football club in the world, after historians discovered a direct lineage through their ownership under the same Crystal Palace Company. Both the amateur and professional clubs played inside the grounds of the Crystal Palace Exhibition building, with the professional club using the FA Cup Final stadium for its home games until 1915, when they were forced to leave due to the outbreak of the First World War. In 1924, they moved to their current home at Selhurst Park.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Burnley">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/burnley.png' %}" style= "width:180;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Burnley FC</h5>
+              <p>Burnley Football Club is an English association football club based in Burnley, Lancashire. Founded on 18 May 1882, it was one of the first to become professional (in 1883), and subsequently put pressure on the Football Association to permit payments to players. The club entered the FA Cup for the first time in 1885–86 and was one of the 12 founder members of the Football League in 1888–89. From the 1950s until the 1970s, under chairman Bob Lord, the club became renowned for its youth policy and scouting system, and was one of the first to set up a purpose-built training ground. The team currently compete in the Premier League, the top tier of English football.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "BHA">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/brighton.png' %}" style= "width:220;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Brighton & Hove Albion FC</h5>
+              <p>Brighton & Hove Albion Football Club, commonly referred to simply as Brighton, is an English professional football club based in the city of Brighton and Hove. They compete in the Premier League, the top tier of the English football league system. The club's home ground is the 30,750-capacity Falmer Stadium, situated in Falmer to the north east of the city. Founded in 1901, and nicknamed the "Seagulls" or "Albion", Brighton played their early professional football in the Southern League, before being elected to the Football League in 1920.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "Newcastle">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/newcastle.png' %}" style= "width:180;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Newcastle United FC</h5>
+              <p>Newcastle United Football Club is an English professional football club based in Newcastle upon Tyne, Tyne and Wear, that plays in the Premier League, the top flight of English football. Founded in 1892 by the merger of Newcastle East End and Newcastle West End. The team plays its home matches at St. James' Park. Per the Taylor Report's requirement that all Premier League clubs have an all-seater stadium, the ground was adjusted in the mid-1990s and now has a capacity of 52,305.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Fulham">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/fulham.png' %}" style= "width:220;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Fulham FC</h5>
+              <p>Fulham Football Club is an English professional association football club based in Fulham, London. They currently compete in the Premier League, the highest level of the English football league system. Founded in 1879, they are London's oldest football club playing professionally. The club has spent 27 seasons in English football's top division, the majority of which have come in two periods during the 1960s and 2000s.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id= "WBA">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid" src="{% static 'assets/img/EPL/WBA.png' %}" style= "width:180;height:200px;" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>West Bromwich Albion FC</h5>
+              <p>West Bromwich Albion Football Club is an English professional football club based in West Bromwich, West Midlands, England, that competes in the Premier League, the top tier of English football. The club was formed in 1878 and has played at its home ground, The Hawthorns, since 1900. Albion was one of the 12 founding members of the Football League in 1888, the first professional football league in the world.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id= "Shef">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="{% static 'assets/img/EPL/Shef.png' %}" style= "width:220;height:220px;"alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h5>Sheffield United FC</h5>
+              <p>Sheffield United Football Club is a professional football club in Sheffield, South Yorkshire, England, which competes in the Premier League, the top division of English football. They formed in 1889, as an offshoot of Sheffield United Cricket Club, and are nicknamed The Blades due to Sheffield's history of steel production. They have played home games at Bramall Lane since their formation. Sheffield United won the original Football League in 1898 and the FA Cup in 1899, 1902, 1915 and 1925.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<a href= "leagues">Go back to Leagues Page</a>
+</p>
+</div>
+<div id="container-floating">
+
+<div id="floating-button" type="button" class="navbar-toggle collapsed" data-placement="left">
+    <a class="nav-item mx-0 mx-lg-1 nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Contents">🔼</a>
+</div>
+
+
+{% endblock %}

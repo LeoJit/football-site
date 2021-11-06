@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}Search{% endblock %}
+{% load static %}
+{% block content %}
+
+<br><br><br>
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        {% if success %}
+        <div class="alert alert-success" role="alert">
+            Sent!
+        </div>
+        {% endif %}
+
+        <form id='SearchForm' name='foundPlayer' novalidate='novalidate' method="post">
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ form.non_field_errors }}
+            </div>
+            {% endif %}
+
+            {% for field in form %}
+            <div class='control-group'>
+                <div class='form-group floating-label-form-group controls mb-0 pb-2'>
+                    {{ field.label_tag }}
+                    {{ field }}
+
+                    {% for error in field.errors %}
+                    <p class='help-block text-danger'>{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                {% if fail %}
+                <p>Sorry we could not find a match with that name. Please check the name again!</p>
+
+                <br><br><br>
+                <center>
+                    <div id="button" class="btn-get-started scrollto">
+                        <input class="btn-get-started scrollto" id="SubmitBtn" type="submit" name="submit"
+                            value="Submit">
+                    </div>
+                </center>
+
+                {% elif details %}
+                <br><br>
+                {% if details.New %}
+                <div class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Added!</strong> New player added to database!
+                </div>
+                {% else %}
+                <div class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Player details retrieved from database!
+                </div>
+                {% endif %}
+                <p>Here are the details for {{ details.Name }}</p>
+
+                {% if details.Thumbnail %}
+                    <img src = "{{ details.Thumbnail }}" align = "right">
+                {% endif %}
+
+                {% if details.Name %}
+                <p><b>Player Name: </b> {{ details.Name }} </p>
+                {% endif %}
+                <hr style="color: white;">
+
+                {% if details.Current_Club %}
+                <p><b>Current Club: </b> {{ details.Current_Club }} </p>
+                {% endif %}
+                <hr style="color: white;">
+
+                {% if details.nationality %}
+                <p><b>Nationality: </b> {{ details.nationality }}</p>
+                {% endif %}
+                <hr style="color: white;">
+
+                {% if details.market_value%}
+                <p><b>Market Value: </b> {{ details.market_value }}</p>
+                {% endif %}
+                <hr style="color: white;">
+
+                {% if details.height %}
+                <p><b>Height: </b> {{ details.height }}</p>
+                {% endif %}
+                <hr style="color: white;">
+
+                {% if details.club_logo %}
+                    <img src = "{{ details.club_logo }}" align = "right">
+                {% endif %}
+
+                {% if details.Infos %}
+                <h3>Player transfer record:</h3>
+                {% for transfer in details.Infos %}
+                <p>{{ transfer }}</p>
+                {% endfor %}
+                {% endif %}
+
+                <hr style="color: white;">
+
+                {% if details.Stats %}
+                <h3>Player stats in league:</h3>
+                {% for k, v in details.Stats.items %}
+                <p>{{ k }} → {{ v }}</p>
+                {% endfor %}
+                {% endif %}
+                    <button><a href = "http://localhost:8000/search" target = "_blank">Search for another player</a></button>
+
+                {% else %}
+                <br><br><br>
+                <center>
+                    <div id="button" class="btn-get-started scrollto">
+                        <input class="btn-get-started scrollto" id="SubmitBtn" type="submit" name="submit"
+                            value="Submit">
+                    </div>
+                </center>
+                {% endif %}
+
+                <br><br>
+            </div>
+
+            {% endfor %}
+
+            <!--
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            {% for error in field.errors %}
+                <p class = 'help-block text-danger'>{{ error }}</p>
+            {% endfor %}
+        -->
+        </form>
+        <hr style="color: white;">
+    </div>
+</div>
+
+
+
+{% endblock %}

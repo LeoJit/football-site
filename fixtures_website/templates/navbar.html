@@ -1,0 +1,40 @@
+{% url 'index' as index_url %}
+{% url 'leagues' as leagues_url %}
+{% url 'fixtures' as fixtures_url %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Football 24/7</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger {% if request.path == index_url %}active{% endif %}" href="{{ index_url }}">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger {% if request.path == leagues_url %}active{% endif %}" href="{{ leagues_url }}">Leagues</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger {% if request.path == fixtures_url %}active{% endif %}" href="{{ fixtures_url }}">Fixtures</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--
+<nav class="nav-menu d-none d-lg-block">
+        <li><a href = "{{ index_url }}">Home</a></li>
+        <li><a href = "{{ leagues_url }}">Leagues</a></li>
+        <li><a href = "{{ fixtures_url }}">Fixtures</a></li>
+  </nav><!-- .nav-menu 
+</div>
+</header>
+
+<div>
+    {% url 'public:index' as index_url %}
+    <span>{% if request.path == index_url %}Home{% else %}<a href= "{{ index_url }}">Home</a>{% endif %}</span>
+    {% url 'public:leagues' as leagues_url %}
+    <span>{% if request.path == leagues_url %}Leagues{% else %}<a href= "{{ leagues_url }}">Leagues</a>{% endif %}</span>
+    {% url 'public: fixtures' as fixtures_url %}
+    <span>{% if request.path == fixtures_url %}Fixtures{% else %}<a href= "{{ fixtures_url }}">Fixtures</a>{% endif %}</span>
+</div>
+-->
